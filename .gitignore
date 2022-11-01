@@ -1,7 +1,5 @@
 # temporary files, log files
 *.log
-*checkpoint.ipynb
-src/.ipynb_checkpoints/
 
 # big outputs
 *.nc
