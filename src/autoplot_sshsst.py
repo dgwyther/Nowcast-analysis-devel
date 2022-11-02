@@ -75,6 +75,7 @@ for col,time in enumerate(omaps.time):
                 cbar = fig.colorbar(im, cax=cax)
                 cbar.ax.set_ylabel('SST ($\circ C$)')
                 cbar.add_lines(co)
+                ax.set_yticklabels('')
             else:
                 ax.set_ylabel('')
                 ax.set_yticklabels('')
@@ -110,6 +111,7 @@ for col,time in enumerate(omaps.time):
                 cbar = fig.colorbar(im, cax=cax)
                 cbar.ax.set_ylabel('SLA (m)')
                 cbar.add_lines(co)  
+                ax.set_yticklabels('')
             else:
                 ax.set_ylabel('')
                 ax.set_yticklabels('')
@@ -127,4 +129,4 @@ for col,time in enumerate(omaps.time):
             else:
                 ax.set_ylabel('')
                 ax.set_yticklabels('')
-plt.savefig(out_dir+str(date)+'.png',transparent=None,bbox_inches='tight',pad_inches=0.1)
+plt.savefig(out_dir+str(date)+'_SSHSST.png',transparent=None,bbox_inches='tight',pad_inches=0.1)
